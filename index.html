@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=11" />
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<meta name="robots" content="all,follow" />
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700;800;900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        
+    }
+    .logo{
+        width: 25%;
+    }
+
+    .services-header{
+        display: flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column;
+    }
+
+    .services-header h1,p{
+        margin-top: 0;
+        text-align: center;
+    }
+
+
+    .service-card-wrapper{
+        display: flex;
+        flex-wrap: wrap ;
+        justify-content: center; /*Ou le space-arround*/
+        margin-bottom: 2rem;
+    }
+
+    .service-card{
+        display: grid;
+        place-content: center;
+        background: #fff;
+        border-radius: 2px;
+        padding: 3rem;
+        margin: 1rem;
+        width: 300px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .service-card span{
+        padding-inline: 1rem;
+        width: 100%;
+        place-content: center;
+        font-weight: 700;
+        font-size: 18px;
+        color: var(--primary-gradient-begin);
+    }
+
+    .service-card:hover{
+        cursor: pointer;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        
+    }
+
+    @media (max-width:650px) {
+        .service-card{
+            width: 80%;
+        }
+    }
+    @media (max-width:370px) {
+        .service-card{
+            width: 90%;
+        }
+    }
+    hr{
+        height: 1px;
+        background: rgba(204, 204, 204, 0.762);
+        border: none;
+        margin-block: 2rem;
+    }
+
+    .service-card-wrapper a{
+        text-decoration: none;
+        color: #116e9b;
+    }
+</style>
+</head>
+<body>
+    <div style="min-height: 100%;">
+        <div class="services-header">
+            <img src="../Downloads/Blason-rt (1).svg" class="logo" alt="logo">
+        
+            <h1>Bienvenu sur Allo Services TG</h1>
+            <p>Le service tout en un qui vous facilite la vie</p>
+        
+            <hr width="60%">
+            
+            <div class="service-card-wrapper" >
+                <a href="#"  class="service-card"><span class="service-card-title">Gaz</span></a>
+                <a href="#"  class="service-card"><span class="service-card-title">Démarcheur</span></a>
+                <a href="#"  class="service-card"><span class="service-card-title">Téla</span></a>
+                <a href="#"  class="service-card"><span class="service-card-title">Zémidjan</span></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+</html>
+
+
+
